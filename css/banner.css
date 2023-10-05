@@ -1,0 +1,74 @@
+.banner1__conteudo, .banner__experiencia__conteudo, 
+.banner__informacoes__conteudo, .banner__ingressos__conteudo,
+.banner__ingresso-comprado__conteudo {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner1__conteudo {
+    background: url("../assets/img/banner.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__experiencia__conteudo {
+    background: url("../assets/img/banner-experiencia.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__informacoes__conteudo {
+    background: url("../assets/img/banner-informacoes.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__ingressos__conteudo {
+    background: url("../assets/img/banner-ingressos.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner__ingresso-comprado__conteudo {
+    background: url("../assets/img/banner-ingresso-comprado.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner1__texto {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.banner2__conteudo {
+    background: url("../assets/img/banner2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .banner1__conteudo, .banner__experiencia__conteudo, 
+    .banner__informacoes__conteudo, .banner__ingressos__conteudo,
+    .banner__ingresso-comprado__conteudo {
+        height: 400px;
+    }
+
+    .banner1__texto {
+        font-size: 64px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .banner2__conteudo {
+        height: 330px;
+    }
+    
+}

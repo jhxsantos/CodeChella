@@ -1,0 +1,81 @@
+.ingressos__container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.ingressos__titulo__texto {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.ingressos__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ingresso__cpf-e-telefone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ingresso__cpf, .ingresso__telefone, .ingresso__nome, .ingresso__email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ingresso__tipo-e-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ingresso__tipo, .ingresso__data-nascimento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ingressos__botao {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 5rem 0;
+}
+
+.ingressos__botao-avancar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* INFORMAÇÕES E INGRESSOS */
+    .ingressos__titulo__texto {
+        font-size: 48px;    
+    }
+
+    .ingresso__cpf-e-telefone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .ingresso__tipo-e-data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+}
+

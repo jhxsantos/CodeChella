@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#Codechella</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script type="module" src="../js/views/informacoes.views.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <section class="cabecalho__container">
+            <div class="logotipo" id="logotipo">
+                <a href="../index.html">
+                    <img class="logotipo__imagem" src="../assets/img/logotipo-branco.png" alt="Logotipo CodeChella"/>
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <a class="link" href="../index.html">Início</a>
+                <a class="link" href="./experiencia.html">A experiência</a>
+                <a class="link" href="./setores.html">Mapa de Setores</a>
+                <a class="link" href="./informacoes.html">Informações</a>
+                <a class="link" href="./ingressos.html">Ingressos</a>
+            </div>
+            <div class="menu-hamburguer">
+                <input class="menu-hamburguer__check" id="menu-hamburguer__check" type="checkbox">
+                <label class="menu-hamburguer__label" id="menu-hamburguer__label" for="menu-hamburguer__check">
+                    <span class="menu-hamburguer__imagem"></span>
+                </label>
+                <ul class="menu-hamburguer__lista">
+                    <li class="link__decoration"><a class="link" href="../index.html">Início</a></li>
+                    <li class="link__decoration"><a class="link" href="./experiencia.html">A experiência</a></li>
+                    <li class="link__decoration"><a class="link" href="./setores.html">Mapa de Setores</a></li>
+                    <li class="link__decoration"><a class="link" href="./informacoes.html">Informações</a></li>
+                    <li><a class="link" href="./ingressos.html">Ingressos</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="banner__informacoes" id="banner__informacoes">
+            <div class="banner__informacoes__conteudo">
+                <h1 class="banner1__texto">Informações Gerais</h1>
+            </div>
+        </section>
+        <section class="principal">
+            <div class="informacoes-gerais__container">
+                <div class="informacoes-gerais__titulo">
+                    <h1 class="informacoes-gerais__titulo__texto">Perguntas Frequentes:</h1>
+                </div>
+                <div class="informacoes-gerais" id="informacoes-gerais">
+                    <div class="informacao">
+                        <div class="informacao__pergunta">
+                            <p class="pergunta"></p>
+                            <img class="pergunta__seta" src="../assets/img/arrow-drop-down.png"/>
+                        </div>
+                        <div class="informacao__resposta">
+                            <p class="resposta"></p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="rodape__container">
+                <div class="rodape__esquerda">
+                    <img class="rodape__logotipo" src="../assets/img/logotipo-cinza.png" alt="Logotipo CodeChella">
+                    <div class="redes">
+                        <p class="p__rodape">Acesse nossas redes:</p>
+                        <div class="rodape__redes">
+                            <img src="../assets/img/whatsapp.png" alt="ícone do whatsapp"/>
+                            <img src="../assets/img/twitch.png" alt="ícone da twitch"/>
+                            <img src="../assets/img/intagram.png" alt="ícone do instagram"/>
+                            <img src="../assets/img/twitter.png" alt="ícone do twitter"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="autoria">
+                    <p class="rodape__autoria p__rodape">Desenvolvido por José Henrique.</p>
+                    <p class="rodape__autoria p__rodape">Projeto fictício sem fins comerciais.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+.mapa {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa__imagem {
+    width: 100%;
+    max-width: 400px;
+}
+
+.legenda__titulo {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.legenda__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.legenda {
+    border-radius: 2px;
+    width: 35px;
+    height: 35px;
+}
+
+.legenda__pista-premium {
+    background-color: var(--cor-mapa-pista-premium);
+}
+
+.legenda__pista-comum {
+    background-color: var(--cor-mapa-pista-comum);
+}
+
+.legenda__cadeiras-inf {
+    background-color: var(--cor-mapa-cadeiras-inf);
+}
+
+.legenda__cadeiras-sup {
+    background-color: var(--cor-mapa-cadeiras-sup);
+}
+.legenda__rampas {
+    background: url("../assets/img/icone-rampa.png") no-repeat;
+}
+
+.mais-detalhes {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.mapa__pista-comum, .mapa__pista-premium, .mapa__cadeiras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.setor__imagem__imagem {
+    width: 100%;
+}
+
+.mapa__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.mapa__texto {
+    text-align: center;
+    width: 100%;
+    line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .mapa__imagem {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .mapa__texto {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .mapa {
+        display: flex;    
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .mapa__imagem {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .mapa__informacoes__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        max-width: 1300px;
+    }   
+    
+    .mapa__pista-premium {
+        padding-top: 5rem;
+    }
+    
+}

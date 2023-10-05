@@ -1,0 +1,117 @@
+.cabecalho {
+    background-color: var(--cor-primaria-azul);    
+}
+
+.cabecalho__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 128px;
+    padding: 0 1.5rem;
+}
+
+.logotipo__imagem {
+    width: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-hamburguer { 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+
+.menu-hamburguer__check {
+    display: none;
+}
+
+.menu-hamburguer__label {   
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-hamburguer__imagem {
+    background: url("../assets/img/menu.png") no-repeat;     
+    background-position: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu-hamburguer__lista {
+    background-color: var(--cor-primaria-azul);
+    width: 200px;
+    border: 1px solid var(--cor-gradiente-1);
+    padding: 1.5rem;
+    position: absolute;
+    left: -195px;
+    top: -500px;
+    /* display: none; */
+}
+
+.menu-hamburguer__check:checked~.menu-hamburguer__lista {
+    top: 50px;
+    transition: top 0.3s;
+    /* display: block; */
+}
+
+.link__decoration {    
+    border-bottom: 1px solid var(--cor-fonte-clara);
+    height: 30px;
+    padding-bottom: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .cabecalho__container {
+        gap: 2.5rem;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 2rem;
+        color: var(--cor-fonte-clara);
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__container {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 130px;
+        width: 100%;
+        max-width: calc(1400px + 7rem);
+        padding: 0;
+    }
+
+    .logotipo {
+        padding-left: 7rem;
+    }
+
+    .menu {
+        padding-right: 7rem;
+    }
+}

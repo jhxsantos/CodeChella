@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@500;700&display=swap');
+
+@import url("./reset.css");
+
+@import url("./cabecalho.css");
+@import url("./banner.css");
+@import url("./apresentacao-evento.css");
+@import url("./experiencia.css");
+@import url("./line-up.css");
+@import url("./mapa-setores.css");
+@import url("./comprar-ingressos.css");
+@import url("./perguntas-frequentes.css");
+@import url("./ingresso-comprado.css");
+@import url("./rodape.css");
+
+:root {
+    --font-titulos: "Calistoga", normal;
+    --font-textos: "Raleway", normal;
+
+    --cor-fonte-escura: #444;
+    --cor-fonte-clara: #FFF;
+
+    --gradiente-bg: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --cor-gradiente-1: #BFDAE6;
+    --cor-gradiente-2: #FBF0DD;
+    --cor-gradiente-3: #FACF9D;
+
+    --gradiente-ingresso: linear-gradient(180deg, #FACF9D 0%, #FCF0DD 50%, #BFDAE6 100%);
+
+    --cor-primaria-azul: #2E7BA2;
+    --cor-primaria-mostarda: #DF9010;
+    
+    --cor-botao-azul: #2E7BA2;
+    --cor-botao-azul-hover: #519EC5;
+    --cor-botao-roxo: #4650BD;
+    --cor-botao-roxo-hover: #606ADA;
+
+    --cor-erro-formulario: red;
+
+    --cor-mapa-pista-premium: #0E7DF1;
+    --cor-mapa-pista-comum: #FE016E;
+    --cor-mapa-cadeiras-inf: #01A89E;
+    --cor-mapa-cadeiras-sup: #3F51B5;
+    
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: var(--font-titulos);
+    color: var(--cor-fonte-escura);
+}
+
+h2 {
+    font-family: var(--font-textos);
+    color: var(--cor-fonte-escura);
+}
+
+p {
+    font-family: var(--font-textos);
+    color: var(--cor-fonte-escura);
+    font-size: 20px;
+}
+
+a {
+    font-family: var(--font-textos);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+main {
+    min-height: calc(100vh - 280px);
+    background-color: var(--cor-gradiente-3);
+}
+
+.link {
+    color: var(--cor-fonte-clara);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--cor-gradiente-3);
+}
+
+.label {
+    color: var(--cor-fonte-escura);
+    font-family: var(--font-textos);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+.input {
+    font-family: var(--font-textos);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-fonte-escura);
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+}
+
+.input:focus {
+    outline: 1px solid var(--cor-primaria-mostarda);
+}
+
+.input::placeholder {
+    font-size: 15px;
+}
+
+.erro__input {
+    height: 20px;
+    font-family: var(--font-textos);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-erro-formulario);
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.botao-azul {
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px 0px #444;
+    padding: 1rem;
+    background-color: var(--cor-botao-azul);
+    color: var(--cor-fonte-clara);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao-azul:hover {
+    background-color: var(--cor-botao-azul-hover);
+    transition: all 1s;    
+}
+
+.botao-azul:focus {
+    outline: 1px solid var(--cor-fonte-clara);
+}
+
+@media screen and (min-width: 768px) {
+
+    .label {
+        font-size: 25px;
+    }
+    
+}

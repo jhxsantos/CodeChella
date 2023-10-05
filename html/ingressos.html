@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#Codechella</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="../js/views/ingressos.views.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <section class="cabecalho__container">
+            <div class="logotipo" id="logotipo">
+                <a href="../index.html">
+                    <img class="logotipo__imagem" src="../assets/img/logotipo-branco.png" alt="Logotipo CodeChella"/>
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <a class="link" href="../index.html">Início</a>
+                <a class="link" href="./experiencia.html">A experiência</a>
+                <a class="link" href="./setores.html">Mapa de Setores</a>
+                <a class="link" href="./informacoes.html">Informações</a>
+                <a class="link" href="./ingressos.html">Ingressos</a>
+            </div>
+            <div class="menu-hamburguer">
+                <input class="menu-hamburguer__check" id="menu-hamburguer__check" type="checkbox">
+                <label class="menu-hamburguer__label" id="menu-hamburguer__label" for="menu-hamburguer__check">
+                    <span class="menu-hamburguer__imagem"></span>
+                </label>
+                <ul class="menu-hamburguer__lista">
+                    <li class="link__decoration"><a class="link" href="../index.html">Início</a></li>
+                    <li class="link__decoration"><a class="link" href="./experiencia.html">A experiência</a></li>
+                    <li class="link__decoration"><a class="link" href="./setores.html">Mapa de Setores</a></li>
+                    <li class="link__decoration"><a class="link" href="./informacoes.html">Informações</a></li>
+                    <li><a class="link" href="./ingressos.html">Ingressos</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="banner__ingressos" id="banner__ingressos">
+            <div class="banner__ingressos__conteudo">
+                <h1 class="banner1__texto">Garanta seu ingresso</h1>
+            </div>
+        </section>
+        <section class="principal">
+            <div class="ingressos__container">
+                <div class="ingressos__titulo">
+                    <h1 class="ingressos__titulo__texto" id="ancora-formulario">Preencha o formulário:</h1>
+                </div>
+                <form class="ingressos__formulario" id="ingressos__formulario">
+                    <div class="ingresso__nome input__container">
+                        <label class="label" for="input__nome">Nome completo:</label>
+                        <input class="input input__nome" id="input__nome" name="nome" type="text" minlength="8" required/>
+                        <span class="erro__input" id="erro__input__nome" aria-live="polite"></span>
+                    </div>
+                    <div class="ingresso__email input__container">
+                        <label class="label" for="input__email">E-mail:</label>
+                        <input class="input input__email" id="input__email" name="e-mail" type="email" minlength="8" required/>
+                        <span class="erro__input" id="erro__input__email" aria-live="polite"></span>
+                    </div>
+                    <div class="ingresso__cpf-e-telefone">
+                        <div class="ingresso__cpf input__container">
+                            <label class="label" for="input__cpf">CPF:</label>
+                            <input class="input input__cpf" id="input__cpf" name="cpf" type="text" minLength="14" maxlength="14" required/>
+                            <span class="erro__input" id="erro__input__cpf" aria-live="polite"></span>
+                        </div>
+                        <div class="ingresso__telefone input__container">
+                            <label class="label" for="input__telefone">Telefone:</label>
+                            <input class="input input__telefone" id="input__telefone" name="telefone" type="text" minlength="14" maxlength="15" required/>
+                            <span class="erro__input" id="erro__input__telefone" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="ingresso__tipo-e-data">
+                        <div class="ingresso__data-nascimento input__container">
+                            <label class="label" for="input__data-nascimento">Data de nascimento:</label>
+                            <input class="input input__data-nascimento" id="input__data-nascimento" name="data de nascimento" type="date" minlength="10" maxlength="10" required/>
+                            <span class="erro__input" id="erro__input__data-nascimento" aria-live="polite"></span>
+                        </div>
+                        <div class="ingresso__tipo input__container">
+                            <label class="label" for="input__tipo-ingresso">Tipo de ingresso:</label>
+                            <select class="input input__tipo-ingresso" id="input__tipo-ingresso" name="tipo de ingresso" required>
+                                <option class="option-disabled" value="" selected disabled></option>
+                                <option class="option" value="Pista premium">Pista premium</option>
+                                <option class="option" value="Pista comum">Pista comum</option>
+                                <option class="option" value="Cadeira inferior">Cadeira inferior</option>
+                                <option class="option" value="Cadeira superior">Cadeira superior</option>
+                            </select>
+                            <span class="erro__input" id="erro__input__tipo-ingresso" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="ingressos__botao">
+                        <a class="ingressos__botao-avancar botao-azul" id="ingressos__botao-avancar" href="#">Comprar <img class="icone-seta" src="../assets/img/seta.png" alt="Ícone de uma seta"></a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="rodape__container">
+                <div class="rodape__esquerda">
+                    <img class="rodape__logotipo" src="../assets/img/logotipo-cinza.png" alt="Logotipo CodeChella">
+                    <div class="redes">
+                        <p class="p__rodape">Acesse nossas redes:</p>
+                        <div class="rodape__redes">
+                            <img src="../assets/img/whatsapp.png" alt="ícone do whatsapp"/>
+                            <img src="../assets/img/twitch.png" alt="ícone da twitch"/>
+                            <img src="../assets/img/intagram.png" alt="ícone do instagram"/>
+                            <img src="../assets/img/twitter.png" alt="ícone do twitter"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="autoria">
+                    <p class="rodape__autoria p__rodape">Desenvolvido por José Henrique.</p>
+                    <p class="rodape__autoria p__rodape">Projeto fictício sem fins comerciais.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

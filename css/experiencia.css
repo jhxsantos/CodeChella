@@ -1,0 +1,58 @@
+.informacoes__acessibilidade__container, 
+.informacoes__sustentabilidade__container, .informacoes__atracoes__container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.informacoes__acessibilidade__container, 
+.informacoes__sustentabilidade__container, .informacoes__atracoes__container  {
+    padding-bottom: 3rem;
+}
+
+.informacoes__acessibilidade__titulo,
+.informacoes__sustentabilidade__titulo, .informacoes__atracoes__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+.informacoes__acessibilidade__texto,
+.informacoes__sustentabilidade__texto, .informacoes__atracoes__texto {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 750px;
+}
+
+.informacoes__acessibilidade__titulo, .informacoes__acessibilidade__texto,
+.informacoes__atracoes__titulo, .informacoes__atracoes__texto,
+.informacoes__sustentabilidade__titulo, .informacoes__sustentabilidade__texto {
+    text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .informacoes__acessibilidade__container, .informacoes__atracoes__container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .informacoes__sustentabilidade__container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+
+    .informacoes__acessibilidade__titulo, .informacoes__acessibilidade__texto,
+    .informacoes__atracoes__titulo,       .informacoes__atracoes__texto {      
+        text-align: left;
+    }
+    
+    .informacoes__sustentabilidade__titulo, .informacoes__sustentabilidade__texto {
+        text-align: right;
+    }
+
+}

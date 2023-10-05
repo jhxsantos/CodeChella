@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#Codechella</title>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <script src="../js/views/ingresso-comprado.views.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <section class="cabecalho__container">
+            <div class="logotipo" id="logotipo">
+                <a href="../index.html">
+                    <img class="logotipo__imagem" src="../assets/img/logotipo-branco.png" alt="Logotipo CodeChella"/>
+                </a>
+            </div>
+            <div class="menu" id="menu">
+                <a class="link" href="../index.html">Início</a>
+                <a class="link" href="./experiencia.html">A experiência</a>
+                <a class="link" href="./setores.html">Mapa de Setores</a>
+                <a class="link" href="./informacoes.html">Informações</a>
+                <a class="link" href="./ingressos.html">Ingressos</a>
+            </div>
+            <div class="menu-hamburguer">
+                <input class="menu-hamburguer__check" id="menu-hamburguer__check" type="checkbox">
+                <label class="menu-hamburguer__label" id="menu-hamburguer__label" for="menu-hamburguer__check">
+                    <span class="menu-hamburguer__imagem"></span>
+                </label>
+                <ul class="menu-hamburguer__lista">
+                    <li class="link__decoration"><a class="link" href="../index.html">Início</a></li>
+                    <li class="link__decoration"><a class="link" href="./experiencia.html">A experiência</a></li>
+                    <li class="link__decoration"><a class="link" href="./setores.html">Mapa de Setores</a></li>
+                    <li class="link__decoration"><a class="link" href="./informacoes.html">Informações</a></li>
+                    <li><a class="link" href="./ingressos.html">Ingressos</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="banner__ingresso-comprado" id="banner__ingresso-comprado">
+            <div class="banner__ingresso-comprado__conteudo">
+                <h1 class="banner1__texto">Seu ingresso está aqui!</h1>
+            </div>
+        </section>
+        <section class="principal">
+            <div class="ingresso-comprado__titulo">
+                <h1 class="ingresso-comprado__titulo__texto">Imprima seus ingressos, apresente nos dias do evento e divirta-se!</h1>
+            </div>
+            <div class="ingresso-comprado__container">
+                <div class="ingresso__card">
+                    <img class="ingresso__card__logotipo" src="../assets/img/logotipo-cinza.png" alt="Logotipo CodeChella"/>
+                    <p class="ingresso__card__informacoes__dia">1º Dia (11/03)</p>
+                    <div class="ingresso__card__qr-code">
+                        <img class="ingresso__card__qr-code__imagem" src="../assets/img/qr-code.png" alt="QR-code"/>
+                    </div>
+                    <div class="ingresso__card__informacoes">
+                        <p class="ingresso__card__informacoes__nome-comprador" id="nome-comprador-1">Fulano de Tal</p>
+                        <p class="ingresso__card__informacoes__informacao" id="tipo-ingresso-1">Pista comum</p>
+                        <p class="ingresso__card__informacoes__informacao" id="data-compra-1">Data da compra: dd/mm/yyyy</p>
+                        <p class="ingresso__card__informacoes__informacao">São Paulo-SP</p>
+                    </div>
+                    <img class="ingresso__card__tag" src="../assets/img/tag.png" alt="Tag CodeChella"/>
+                </div>
+                <div class="ingresso__card">
+                    <img class="ingresso__card__logotipo" src="../assets/img/logotipo-cinza.png" alt="Logotipo CodeChella"/>                        
+                    <p class="ingresso__card__informacoes__dia">2º Dia (12/03)</p>
+                    <div class="ingresso__card__qr-code">
+                        <img class="ingresso__card__qr-code__imagem" src="../assets/img/qr-code.png" alt="QR-code"/>
+                    </div>
+                    <div class="ingresso__card__informacoes">
+                        <p class="ingresso__card__informacoes__nome-comprador" id="nome-comprador-2">Fulano de Tal</p>
+                        <p class="ingresso__card__informacoes__informacao" id="tipo-ingresso-2">Pista comum</p>
+                        <p class="ingresso__card__informacoes__informacao" id="data-compra-2">Data da compra: dd/mm/yyyy</p>
+                        <p class="ingresso__card__informacoes__informacao">São Paulo-SP</p>
+                    </div>
+                    <img class="ingresso__card__tag" src="../assets/img/tag.png" alt="Tag CodeChella"/>
+                </div>          
+            </div>
+            <div class="ingresso-comprado__botao">
+                <a class="ingresso-comprado__botao-comprar botao-azul" href="./ingressos.html?ancora=#ancora-formulario">Comprar outro <img class="icone-ingresso" src="../assets/img/ingresso.png" alt="Ícone de uma ingresso"></a>
+                <a class="ingresso-comprado__botao-imprimir botao-azul" >Imprimir <img class="icone-impressora" src="../assets/img/printer.png" alt="Ícone de impressora"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="rodape__container">
+                <div class="rodape__esquerda">
+                    <img class="rodape__logotipo" src="../assets/img/logotipo-cinza.png" alt="Logotipo CodeChella">
+                    <div class="redes">
+                        <p class="p__rodape">Acesse nossas redes:</p>
+                        <div class="rodape__redes">
+                            <img src="../assets/img/whatsapp.png" alt="ícone do whatsapp"/>
+                            <img src="../assets/img/twitch.png" alt="ícone da twitch"/>
+                            <img src="../assets/img/intagram.png" alt="ícone do instagram"/>
+                            <img src="../assets/img/twitter.png" alt="ícone do twitter"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="autoria">
+                    <p class="rodape__autoria p__rodape">Desenvolvido por José Henrique.</p>
+                    <p class="rodape__autoria p__rodape">Projeto fictício sem fins comerciais.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

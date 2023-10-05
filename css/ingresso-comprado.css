@@ -1,0 +1,85 @@
+
+.ingresso-comprado__titulo__texto {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding: 3rem 0;
+    max-width: 1000px;
+}
+
+.ingresso-comprado__container {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingresso__card {
+    background: var(--gradiente-ingresso);
+    margin-bottom: 2rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 1px 1px 4px 0px #444;
+}
+
+.ingresso__card__logotipo, .ingresso__card__tag {
+    height: 50px;
+}
+
+.ingresso__card__informacoes__dia {
+    padding: 2rem 0;
+}
+
+.ingresso__card__informacoes {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.ingresso__card__informacoes__dia {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.ingresso__card__informacoes__nome-comprador {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.ingresso__card__informacoes__informacao {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.ingresso-comprado__botao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ingresso-comprado__botao-imprimir, .ingresso-comprado__botao-comprar {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .ingresso-comprado__titulo__texto {
+        font-size: 48px;    
+    }
+
+    .ingresso-comprado__container {
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .ingresso-comprado__botao {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
